@@ -30,6 +30,7 @@ public class Main {
 
         for(JsonElement game : games){
             // In het komende stuk code ga ik de hoogste playtime onthouden door steeds te vergelijken met de vorige hoogste.
+            // app id toegevoegd, omdat het kan later wil ik dat omzetten naar een titel?
             JsonObject gameObject = game.getAsJsonObject();
             int playtime = gameObject.get("playtime_forever").getAsInt();
             int spel = gameObject.get("appid").getAsInt();
